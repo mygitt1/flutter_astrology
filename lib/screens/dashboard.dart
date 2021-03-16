@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_astrology/model/model.dart';
-// import 'package:flutter_astrology/widget/date_picker.dart';
+
 import 'package:flutter_astrology/widget/main_view.dart';
 import 'package:intl/intl.dart';
-// import 'package:intl/intl.dart';
 
 class DashBoard extends StatefulWidget {
   @override
@@ -78,12 +77,8 @@ class _DashBoardState extends State<DashBoard> {
                   width: MediaQuery.of(context).size.width,
                   color: Colors.purpleAccent,
                   child: TextButton(
-                    onPressed: () async {
-                      print('Getting Data when Tapping');
-                      // await getData();
-                      setState(() {
-                        // selectedDate = pickedDate;
-                      });
+                    onPressed: () {
+                      setState(() {});
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
